@@ -1,0 +1,90 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "e1d1e27e-60f8-4fa5-a61b-27c40d10a63b": {
+        "id": "e1d1e27e-60f8-4fa5-a61b-27c40d10a63b",
+        "parent": null,
+        "name": "gcloud-test",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "2480d960-9c22-4a1e-91f1-8410674d66a5"
+        ],
+        "isRemovable": false,
+        "filePath": "gcloud-test"
+      },
+      "2480d960-9c22-4a1e-91f1-8410674d66a5": {
+        "id": "2480d960-9c22-4a1e-91f1-8410674d66a5",
+        "parent": "e1d1e27e-60f8-4fa5-a61b-27c40d10a63b",
+        "name": "function.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "gcloud-test/function.js",
+        "code": "exports.handler = function(request, response) {\n    \n    response.send({\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8",
+          "timeout": 60,
+          "memory": 128,
+          "triggerType": 0
+        },
+        "triggers": [
+          {
+            "resourceName": "http-trigger",
+            "config": {}
+          }
+        ]
+      },
+      "9abae767-5beb-4f8e-9193-ab3fd0f6816d": {
+        "id": "9abae767-5beb-4f8e-9193-ab3fd0f6816d",
+        "parent": null,
+        "name": "index.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "index.js",
+        "code": "// This file is used to register all your cloud functions in GCP.\n// DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\nexports.gcloudTestfunction = require(\"./gcloud-test/function.js\").handler;"
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "e1d1e27e-60f8-4fa5-a61b-27c40d10a63b",
+    "openFiles": [
+      "2480d960-9c22-4a1e-91f1-8410674d66a5"
+    ],
+    "currentFileId": "2480d960-9c22-4a1e-91f1-8410674d66a5",
+    "resources": {
+      "http-trigger": {
+        "name": "http-trigger",
+        "type": "http-trigger",
+        "config": {}
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "gcloud-test",
+    "projectDescription": "testing code structure",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-central1",
+    "platform": "GCP",
+    "platformRegions": {},
+    "lastSave": 1565951437512
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "gcloud-test",
+      "url": "https://github.com/lpssudarshana/gcloud-test",
+      "branches": []
+    }
+  }
+}
