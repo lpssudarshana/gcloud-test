@@ -22,7 +22,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "gcloud-test/function.js",
-        "code": "exports.handler = function(request, response) {\n    \n    response.send({\"message\": \"Successfully executed\"});\n}",
+        "code": "exports.handler = function(request, response) { \n    this.exports = message.response;\n    \n    response.send({\"message\": \"Successfully executed\"});\n}",
         "config": {
           "runtime": "nodejs8",
           "timeout": 60,
@@ -77,14 +77,19 @@
     "projectRegion": "us-central1",
     "platform": "GCP",
     "platformRegions": {},
-    "lastSave": 1565951437512
+    "lastSave": 1566187631564
   },
   "VCS_STATE": {
     "provider": "GitHub",
     "repo": {
       "name": "gcloud-test",
       "url": "https://github.com/lpssudarshana/gcloud-test",
-      "branches": []
+      "branches": [
+        {
+          "name": "master",
+          "hash": "9848d9ec3021a4d8e75d451f5fbf26fa4e8a657d"
+        }
+      ]
     }
   }
 }
